@@ -52,4 +52,4 @@ Rules of thumb: no `>` redirects, no `$()`/backticks, no `rm|mv|cp|kill|ssh|npm 
 Works today for read-only traffic. Known limits: `kill` always escalates;
 compound-command coverage needs a fine-tune on real traffic (dataset in
 `baseline/replay_clean.txt`); tools can't skip LLM deliberation — `q` exists
-for that. See [CHANGELOG](CHANGELOG.md). License: TBD before public release.
+for that. See [CHANGELOG](CHANGELOG.md). License: MIT — see [LICENSE](LICENSE).
