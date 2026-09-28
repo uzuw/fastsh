@@ -1,0 +1,10 @@
+#!/bin/bash
+# daemon on/off switch. usage: daemon on|off|status
+REPO="$(cd "$(dirname "$0")" && pwd)"
+SOCK="${LAYA_SOCK:-/tmp/laya-gate.sock}"
+case "${1:-}" in
+  on) systemctl --user start laya-daemon.service && echo "daemon on" ;;
+  off) systemctl --user stop laya-daemon.service; rm -f "$SOCK"; echo "daemon off" ;;
+  status) systemctl --user is-active laya-daemon.service; [ -S "$SOCK" ] && echo "socket: up" || echo "socket: down" ;;
+  *) echo "usage: daemon on|off|status" ;;
+esac

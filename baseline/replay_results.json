@@ -1,0 +1,1602 @@
+[
+ {
+  "cmd": "node scripts/seed.ts",
+  "tool": "node",
+  "tconf": 0.981,
+  "safe_p": 0.714,
+  "deny": null,
+  "verdict": "escalate"
+ },
+ {
+  "cmd": "rg -n \"export const|export type\" src/gen/guitar/v1/guitar_connect.ts | head -20",
+  "tool": "shell",
+  "tconf": 0.776,
+  "safe_p": 0.059,
+  "deny": null,
+  "verdict": "escalate"
+ },
+ {
+  "cmd": "git status --short | head -30; echo ---; rtk git log --oneline -5; echo ---; git remote -v; echo ---; rtk git branch --show-current",
+  "tool": "git",
+  "tconf": 0.996,
+  "safe_p": 0.066,
+  "deny": null,
+  "verdict": "escalate"
+ },
+ {
+  "cmd": "python3 -m venv venv && venv/bin/pip install -q -r requirements.txt",
+  "tool": "node",
+  "tconf": 1.0,
+  "safe_p": 0.03,
+  "deny": null,
+  "verdict": "escalate"
+ },
+ {
+  "cmd": "pgrep -af ydotoold || echo \"ydotoold not running\"; which ydotool; ydotool --help 2>&1 | head -5",
+  "tool": "shell",
+  "tconf": 0.998,
+  "safe_p": 0.962,
+  "deny": null,
+  "verdict": "fast"
+ },
+ {
+  "cmd": "cat .env",
+  "tool": "shell",
+  "tconf": 1.0,
+  "safe_p": 0.623,
+  "deny": null,
+  "verdict": "escalate"
+ },
+ {
+  "cmd": "mkdir -p /home/uzu/Projects/active/agentflow/.github/workflows",
+  "tool": "shell",
+  "tconf": 0.4,
+  "safe_p": 0.003,
+  "deny": null,
+  "verdict": "escalate"
+ },
+ {
+  "cmd": "ls ~/.dsh/profiles/web/node_modules/@liustack/ 2>&1 | head",
+  "tool": "node",
+  "tconf": 0.952,
+  "safe_p": 0.011,
+  "deny": null,
+  "verdict": "escalate"
+ },
+ {
+  "cmd": "client = AsyncIOMotorClient(uri, serverSelectionTimeoutMS=8000)",
+  "tool": "shell",
+  "tconf": 0.636,
+  "safe_p": 0.001,
+  "deny": null,
+  "verdict": "escalate"
+ },
+ {
+  "cmd": "ref = (m.group(1) or m.group(2)).strip()",
+  "tool": "shell",
+  "tconf": 0.998,
+  "safe_p": 1.0,
+  "deny": null,
+  "verdict": "fast"
+ },
+ {
+  "cmd": "npx tsc --noEmit 2>&1 | tail -5 && echo TSC-OK && npm run lint 2>&1 | tail -3 && echo LINT-OK",
+  "tool": "node",
+  "tconf": 0.357,
+  "safe_p": 0.72,
+  "deny": "npx-exec",
+  "verdict": "deny"
+ },
+ {
+  "cmd": "api_data = products_data[0]",
+  "tool": "shell",
+  "tconf": 1.0,
+  "safe_p": 0.313,
+  "deny": null,
+  "verdict": "escalate"
+ },
+ {
+  "cmd": "mkdir -p server/data && cd server && npm init -y >/dev/null && npm install express 2>&1 | tail -3",
+  "tool": "node",
+  "tconf": 0.983,
+  "safe_p": 0.103,
+  "deny": "npm-install",
+  "verdict": "deny"
+ },
+ {
+  "cmd": "npm run 2>&1 | head -20; npx vite build --help 2>&1 | head -5; node -e \"import('./src/pages/Portfolio.jsx')\" 2>&1 | head -20",
+  "tool": "node",
+  "tconf": 1.0,
+  "safe_p": 0.28,
+  "deny": "npx-exec",
+  "verdict": "deny"
+ },
+ {
+  "cmd": "ls -la /home/uzu/code/vibecoding/frontend_framework",
+  "tool": "shell",
+  "tconf": 0.492,
+  "safe_p": 0.609,
+  "deny": null,
+  "verdict": "escalate"
+ },
+ {
+  "cmd": "data = raw",
+  "tool": "shell",
+  "tconf": 1.0,
+  "safe_p": 0.2,
+  "deny": null,
+  "verdict": "escalate"
+ },
+ {
+  "cmd": "csv_names = [r['name'] for r in rows]",
+  "tool": "shell",
+  "tconf": 1.0,
+  "safe_p": 0.903,
+  "deny": null,
+  "verdict": "fast"
+ },
+ {
+  "cmd": "mv /tmp/tui.go tui.go",
+  "tool": "shell",
+  "tconf": 0.994,
+  "safe_p": 0.003,
+  "deny": null,
+  "verdict": "escalate"
+ },
+ {
+  "cmd": "export default function LoginPage() {",
+  "tool": "shell",
+  "tconf": 0.999,
+  "safe_p": 0.926,
+  "deny": null,
+  "verdict": "fast"
+ },
+ {
+  "cmd": "const allDivs = document.querySelectorAll('div');",
+  "tool": "shell",
+  "tconf": 0.839,
+  "safe_p": 0.492,
+  "deny": null,
+  "verdict": "escalate"
+ },
+ {
+  "cmd": "cd /home/uzu/Projects/active/agentflow/agentflow-api && uv pip install pytest-asyncio 2>&1 | tail -10",
+  "tool": "shell",
+  "tconf": 0.378,
+  "safe_p": 0.68,
+  "deny": null,
+  "verdict": "escalate"
+ },
+ {
+  "cmd": "p_flags = struct.unpack('<I', ph[4:8])[0]",
+  "tool": "shell",
+  "tconf": 1.0,
+  "safe_p": 0.025,
+  "deny": null,
+  "verdict": "escalate"
+ },
+ {
+  "cmd": "const src = require('fs').readFileSync('node_modules/@connectrpc/connect/dist/cjs/index.d.ts','utf8');",
+  "tool": "node",
+  "tconf": 1.0,
+  "safe_p": 0.135,
+  "deny": null,
+  "verdict": "escalate"
+ },
+ {
+  "cmd": "find /home/uzu/Projects/active/min/arly_backend_gces026 -type f -not -path '*/node_modules/*' -not -path '*/.git/*' -not -path '*/.next/*' | head -80",
+  "tool": "shell",
+  "tconf": 0.602,
+  "safe_p": 0.067,
+  "deny": null,
+  "verdict": "escalate"
+ },
+ {
+  "cmd": "rtk grep -o -E \".field-input input, .field-input select\\{[^}]*\\}\" /tmp/opencode/layout.css",
+  "tool": "shell",
+  "tconf": 0.994,
+  "safe_p": 0.0,
+  "deny": null,
+  "verdict": "escalate"
+ },
+ {
+  "cmd": "ydl = yt_dlp.YoutubeDL({'quiet': True, 'no_warnings': True})",
+  "tool": "shell",
+  "tconf": 0.841,
+  "safe_p": 0.0,
+  "deny": null,
+  "verdict": "escalate"
+ },
+ {
+  "cmd": "const elapsed = ((Date.now() - start) / 1000).toFixed(1);",
+  "tool": "shell",
+  "tconf": 1.0,
+  "safe_p": 0.975,
+  "deny": null,
+  "verdict": "fast"
+ },
+ {
+  "cmd": "lsof -i :3001 -P -n 2>/dev/null | head -5",
+  "tool": "shell",
+  "tconf": 0.998,
+  "safe_p": 0.986,
+  "deny": null,
+  "verdict": "fast"
+ },
+ {
+  "cmd": "ls -la /home/uzu/code/vibecoding/fanify/backend/ | grep -v .venv | grep -v __pycache__",
+  "tool": "shell",
+  "tconf": 0.298,
+  "safe_p": 0.928,
+  "deny": null,
+  "verdict": "escalate"
+ },
+ {
+  "cmd": "const page = await browser.newPage();",
+  "tool": "shell",
+  "tconf": 0.621,
+  "safe_p": 0.616,
+  "deny": null,
+  "verdict": "escalate"
+ },
+ {
+  "cmd": "wait $SERVER_PID 2>/dev/null",
+  "tool": "shell",
+  "tconf": 0.973,
+  "safe_p": 0.221,
+  "deny": null,
+  "verdict": "escalate"
+ },
+ {
+  "cmd": "uv run python -m ruff check src/agentflow_api/auth/ 2>&1",
+  "tool": "docker",
+  "tconf": 0.782,
+  "safe_p": 0.007,
+  "deny": null,
+  "verdict": "escalate"
+ },
+ {
+  "cmd": "try { await mermaid.parse(src); console.log('useCase: PARSES OK'); }",
+  "tool": "node",
+  "tconf": 0.595,
+  "safe_p": 0.013,
+  "deny": null,
+  "verdict": "escalate"
+ },
+ {
+  "cmd": "python3 agent.py 2>&1 | tail -3",
+  "tool": "node",
+  "tconf": 0.655,
+  "safe_p": 0.0,
+  "deny": null,
+  "verdict": "escalate"
+ },
+ {
+  "cmd": "offset2 = file_offset + (0x9510 - 0x9000)",
+  "tool": "shell",
+  "tconf": 1.0,
+  "safe_p": 0.958,
+  "deny": null,
+  "verdict": "fast"
+ },
+ {
+  "cmd": "continue",
+  "tool": "shell",
+  "tconf": 1.0,
+  "safe_p": 0.988,
+  "deny": null,
+  "verdict": "fast"
+ },
+ {
+  "cmd": "find src -type f | sort",
+  "tool": "shell",
+  "tconf": 1.0,
+  "safe_p": 1.0,
+  "deny": null,
+  "verdict": "fast"
+ },
+ {
+  "cmd": "data = f['Data']",
+  "tool": "shell",
+  "tconf": 1.0,
+  "safe_p": 1.0,
+  "deny": null,
+  "verdict": "fast"
+ },
+ {
+  "cmd": "cd /home/uzu/classrrom/azure/azure-ci-cd-pipeline && timeout 5 python3 server.py &",
+  "tool": "shell",
+  "tconf": 0.396,
+  "safe_p": 0.995,
+  "deny": null,
+  "verdict": "escalate"
+ },
+ {
+  "cmd": "node product_scrapper/test.js \"iphone\" 2>&1",
+  "tool": "node",
+  "tconf": 0.995,
+  "safe_p": 0.043,
+  "deny": null,
+  "verdict": "escalate"
+ },
+ {
+  "cmd": "find ~/.dsh/profiles -maxdepth 4 -name \"*.json\" | xargs rtk grep -l \"modlens\" 2>/dev/null | head -5",
+  "tool": "shell",
+  "tconf": 0.97,
+  "safe_p": 0.779,
+  "deny": null,
+  "verdict": "escalate"
+ },
+ {
+  "cmd": "ls -lh dotfiles/screenshots/ 2>&1; git -C dotfiles status --short 2>&1; git -C dotfiles diff 2>&1 | head -100",
+  "tool": "git",
+  "tconf": 0.574,
+  "safe_p": 0.146,
+  "deny": null,
+  "verdict": "escalate"
+ },
+ {
+  "cmd": "rtk find ~/.cache/huggingface/hub -type f -size +500M 2>/dev/null; echo ---; rtk ls ~/.cache/huggingface/hub/ | head -20",
+  "tool": "shell",
+  "tconf": 0.516,
+  "safe_p": 0.539,
+  "deny": null,
+  "verdict": "escalate"
+ },
+ {
+  "cmd": "rustup target list --installed 2>&1; echo \"---\"; which wasm-bindgen wasm-pack 2>&1; echo \"---\"; ls ~/.cargo/bin 2>/dev/null",
+  "tool": "shell",
+  "tconf": 1.0,
+  "safe_p": 0.362,
+  "deny": null,
+  "verdict": "escalate"
+ },
+ {
+  "cmd": "const s = document.querySelector('script[type=\\\"application/json\\\"]');",
+  "tool": "shell",
+  "tconf": 0.954,
+  "safe_p": 0.707,
+  "deny": null,
+  "verdict": "escalate"
+ },
+ {
+  "cmd": "grep -n \"PIXEL\\|photo\\|bluebook\" scripts/seed.py | head",
+  "tool": "shell",
+  "tconf": 0.948,
+  "safe_p": 0.048,
+  "deny": null,
+  "verdict": "escalate"
+ },
+ {
+  "cmd": "Edit name",
+  "tool": "shell",
+  "tconf": 1.0,
+  "safe_p": 1.0,
+  "deny": null,
+  "verdict": "fast"
+ },
+ {
+  "cmd": "node product_scrapper/inspect_html.mjs",
+  "tool": "node",
+  "tconf": 1.0,
+  "safe_p": 0.0,
+  "deny": null,
+  "verdict": "escalate"
+ },
+ {
+  "cmd": "theme = tp.get('properties',{}) if isinstance(tp,dict) else {}",
+  "tool": "shell",
+  "tconf": 1.0,
+  "safe_p": 0.984,
+  "deny": null,
+  "verdict": "fast"
+ },
+ {
+  "cmd": "echo copied",
+  "tool": "shell",
+  "tconf": 1.0,
+  "safe_p": 1.0,
+  "deny": null,
+  "verdict": "fast"
+ },
+ {
+  "cmd": "mkdir -p ~/reports",
+  "tool": "shell",
+  "tconf": 1.0,
+  "safe_p": 0.895,
+  "deny": null,
+  "verdict": "escalate"
+ },
+ {
+  "cmd": "ls -la /home/uzu/.vimrc /home/uzu/.vim /home/uzu/.tmux.conf /home/uzu/.zshrc /home/uzu/.inputrc /home/uzu/.Xresources 2>/dev/null",
+  "tool": "shell",
+  "tconf": 0.939,
+  "safe_p": 0.0,
+  "deny": null,
+  "verdict": "escalate"
+ },
+ {
+  "cmd": "function showProgress() {",
+  "tool": "shell",
+  "tconf": 1.0,
+  "safe_p": 0.876,
+  "deny": null,
+  "verdict": "escalate"
+ },
+ {
+  "cmd": "const keys = Object.keys(cache).filter(k => /nothing phone 4b|redmi 15/i.test(k));",
+  "tool": "shell",
+  "tconf": 0.999,
+  "safe_p": 0.142,
+  "deny": null,
+  "verdict": "escalate"
+ },
+ {
+  "cmd": "await check('Hukut', scrapeHukut, 'laptop');",
+  "tool": "shell",
+  "tconf": 0.984,
+  "safe_p": 0.911,
+  "deny": null,
+  "verdict": "fast"
+ },
+ {
+  "cmd": "raw += bytes([r, g, b, 255])",
+  "tool": "shell",
+  "tconf": 1.0,
+  "safe_p": 0.005,
+  "deny": null,
+  "verdict": "escalate"
+ },
+ {
+  "cmd": "lastProgress = clamped;",
+  "tool": "shell",
+  "tconf": 1.0,
+  "safe_p": 0.932,
+  "deny": null,
+  "verdict": "fast"
+ },
+ {
+  "cmd": "cat /home/uzu/Projects/active/min/arly_backend_gces026/.env",
+  "tool": "shell",
+  "tconf": 0.995,
+  "safe_p": 0.701,
+  "deny": null,
+  "verdict": "escalate"
+ },
+ {
+  "cmd": "const r = await scrapeDaraz('Samsung Galaxy S23 FE');",
+  "tool": "shell",
+  "tconf": 0.546,
+  "safe_p": 0.901,
+  "deny": null,
+  "verdict": "escalate"
+ },
+ {
+  "cmd": "cargo --version; rustc --version 2>&1; ls \"$(rustc --print sysroot 2>/dev/null)/lib/rustlib\" 2>/dev/null; echo \"---\"; go version",
+  "tool": "shell",
+  "tconf": 0.983,
+  "safe_p": 0.822,
+  "deny": null,
+  "verdict": "escalate"
+ },
+ {
+  "cmd": "find /home/uzu/Projects/active/min/arly_backend_gces026/product_scrapper -name \"olizstore*\" -type f",
+  "tool": "shell",
+  "tconf": 0.911,
+  "safe_p": 0.181,
+  "deny": null,
+  "verdict": "escalate"
+ },
+ {
+  "cmd": "ls -la /home/uzu/Projects/agentdeck/app/sessions/\\[id\\]/cli/",
+  "tool": "shell",
+  "tconf": 0.572,
+  "safe_p": 0.652,
+  "deny": null,
+  "verdict": "escalate"
+ },
+ {
+  "cmd": "npm run build 2>&1 | tail -20; echo \"---\"; npm test 2>&1 | tail -30; echo \"---\"; npx tsc --noEmit 2>&1 | head -20",
+  "tool": "node",
+  "tconf": 0.998,
+  "safe_p": 0.313,
+  "deny": "npx-exec",
+  "verdict": "deny"
+ },
+ {
+  "cmd": "const k = m.getAttribute('property') || m.getAttribute('name');",
+  "tool": "shell",
+  "tconf": 1.0,
+  "safe_p": 0.996,
+  "deny": null,
+  "verdict": "fast"
+ },
+ {
+  "cmd": "const r = await kitsu.byId(\"56748\");",
+  "tool": "docker",
+  "tconf": 0.88,
+  "safe_p": 0.001,
+  "deny": null,
+  "verdict": "escalate"
+ },
+ {
+  "cmd": "find . -name \"home-top.png\" -not -path \"*/node_modules/*\" 2>/dev/null; find / -name \"home-top.png\" -not -path \"*/proc/*\" 2>/dev/null | head -5",
+  "tool": "shell",
+  "tconf": 0.933,
+  "safe_p": 0.091,
+  "deny": null,
+  "verdict": "escalate"
+ },
+ {
+  "cmd": "mobile_headers = {'User-Agent': 'Mozilla/5.0 (iPhone; CPU iPhone OS 17_0 like Mac OS X) AppleWebKit/605.1.15'}",
+  "tool": "node",
+  "tconf": 1.0,
+  "safe_p": 0.008,
+  "deny": null,
+  "verdict": "escalate"
+ },
+ {
+  "cmd": "ls -la /home/uzu/Projects/agentdeck/app/projects/ 2>/dev/null",
+  "tool": "shell",
+  "tconf": 0.748,
+  "safe_p": 0.886,
+  "deny": null,
+  "verdict": "escalate"
+ },
+ {
+  "cmd": "npm install --no-audit --no-fund 2>&1 | tail -3",
+  "tool": "node",
+  "tconf": 1.0,
+  "safe_p": 0.004,
+  "deny": "npm-install",
+  "verdict": "deny"
+ },
+ {
+  "cmd": "cat /home/uzu/Projects/active/min/arly_backend_gces026/package.json | head -30",
+  "tool": "shell",
+  "tconf": 0.771,
+  "safe_p": 0.453,
+  "deny": null,
+  "verdict": "escalate"
+ },
+ {
+  "cmd": "const bodyText = \\$('body').text();",
+  "tool": "shell",
+  "tconf": 1.0,
+  "safe_p": 0.003,
+  "deny": null,
+  "verdict": "escalate"
+ },
+ {
+  "cmd": "npm install 2>&1 | tail -6",
+  "tool": "node",
+  "tconf": 0.972,
+  "safe_p": 0.003,
+  "deny": "npm-install",
+  "verdict": "deny"
+ },
+ {
+  "cmd": "python3 -m py_compile working_with_LLM.py && echo OK",
+  "tool": "node",
+  "tconf": 0.98,
+  "safe_p": 0.88,
+  "deny": null,
+  "verdict": "escalate"
+ },
+ {
+  "cmd": "msg2 = json.dumps({\"command\": \"cancel\"}).encode(\"utf-8\")",
+  "tool": "shell",
+  "tconf": 0.999,
+  "safe_p": 0.81,
+  "deny": null,
+  "verdict": "escalate"
+ },
+ {
+  "cmd": "ls /home/uzu/code/rag/arly/.venv/bin/ | sort",
+  "tool": "shell",
+  "tconf": 0.658,
+  "safe_p": 0.524,
+  "deny": null,
+  "verdict": "escalate"
+ },
+ {
+  "cmd": "npx vitest run 2>&1 | tail -12",
+  "tool": "shell",
+  "tconf": 0.481,
+  "safe_p": 0.01,
+  "deny": "npx-exec",
+  "verdict": "deny"
+ },
+ {
+  "cmd": "curl -sL --connect-timeout 10 -H \"Accept: application/json\" \\",
+  "tool": "docker",
+  "tconf": 0.336,
+  "safe_p": 0.04,
+  "deny": null,
+  "verdict": "escalate"
+ },
+ {
+  "cmd": "i = html.find('Rs.<!-- -->')",
+  "tool": "node",
+  "tconf": 0.603,
+  "safe_p": 0.835,
+  "deny": null,
+  "verdict": "escalate"
+ },
+ {
+  "cmd": "git -C /home/uzu/code/vibecoding/course_tracker status 2>&1 | head -5; echo \"---GH---\"; gh auth status 2>&1 | head -8",
+  "tool": "git",
+  "tconf": 0.992,
+  "safe_p": 0.15,
+  "deny": null,
+  "verdict": "escalate"
+ },
+ {
+  "cmd": "ls -la /home/uzu/code/intern/month1",
+  "tool": "shell",
+  "tconf": 1.0,
+  "safe_p": 0.898,
+  "deny": null,
+  "verdict": "escalate"
+ },
+ {
+  "cmd": "cd /home/uzu/code/vibecoding/ai-vault && npm install marked 2>&1 | tail -2 && rg '\"marked\"' package.json",
+  "tool": "node",
+  "tconf": 0.953,
+  "safe_p": 0.024,
+  "deny": "npm-install",
+  "verdict": "deny"
+ },
+ {
+  "cmd": "rtk git rm --cached frontend/tsconfig.tsbuildinfo --quiet 2>&1; rtk rm -f frontend/tsconfig.tsbuildinfo; rtk git status --short | head -20",
+  "tool": "git",
+  "tconf": 0.529,
+  "safe_p": 0.001,
+  "deny": null,
+  "verdict": "escalate"
+ },
+ {
+  "cmd": "ts = int(time.time() * 1000)",
+  "tool": "shell",
+  "tconf": 1.0,
+  "safe_p": 0.959,
+  "deny": null,
+  "verdict": "fast"
+ },
+ {
+  "cmd": "Login",
+  "tool": "shell",
+  "tconf": 1.0,
+  "safe_p": 0.005,
+  "deny": null,
+  "verdict": "escalate"
+ },
+ {
+  "cmd": "rtk git status --short && echo \"---\" && rtk git diff --stat",
+  "tool": "git",
+  "tconf": 0.983,
+  "safe_p": 0.138,
+  "deny": null,
+  "verdict": "escalate"
+ },
+ {
+  "cmd": "sleep 2; cat /tmp/backend.log",
+  "tool": "shell",
+  "tconf": 1.0,
+  "safe_p": 0.759,
+  "deny": null,
+  "verdict": "escalate"
+ },
+ {
+  "cmd": "git log --oneline",
+  "tool": "git",
+  "tconf": 0.995,
+  "safe_p": 0.993,
+  "deny": null,
+  "verdict": "fast"
+ },
+ {
+  "cmd": "try { await mermaid.parse(blocks[i]); console.log('OK  diagram', i + 1); }",
+  "tool": "shell",
+  "tconf": 0.924,
+  "safe_p": 0.85,
+  "deny": null,
+  "verdict": "escalate"
+ },
+ {
+  "cmd": "rtk ls /home/uzu/Projects/active/pj/sawari/frontend/.next 2>&1; ps aux | grep \"[n]ext\" | head -5; echo done",
+  "tool": "docker",
+  "tconf": 0.628,
+  "safe_p": 0.002,
+  "deny": null,
+  "verdict": "escalate"
+ },
+ {
+  "cmd": "raw = open('/home/uzu/Downloads/world/level.dat','rb').read()",
+  "tool": "shell",
+  "tconf": 1.0,
+  "safe_p": 0.369,
+  "deny": null,
+  "verdict": "escalate"
+ },
+ {
+  "cmd": "cat package.json; echo \"---\"; ls src/app; echo \"---\"; cat src/app/globals.css | head -30",
+  "tool": "shell",
+  "tconf": 0.986,
+  "safe_p": 0.066,
+  "deny": null,
+  "verdict": "escalate"
+ },
+ {
+  "cmd": "prefixes = [str(Path(p)) for p in watcher.DEFAULT_WATCH_PATHS]",
+  "tool": "shell",
+  "tconf": 1.0,
+  "safe_p": 0.699,
+  "deny": null,
+  "verdict": "escalate"
+ },
+ {
+  "cmd": "pages = list(d['query']['pages'].values())",
+  "tool": "k8s",
+  "tconf": 0.831,
+  "safe_p": 0.997,
+  "deny": null,
+  "verdict": "escalate"
+ },
+ {
+  "cmd": "const items = [",
+  "tool": "shell",
+  "tconf": 1.0,
+  "safe_p": 0.975,
+  "deny": null,
+  "verdict": "fast"
+ },
+ {
+  "cmd": "cd /home/uzu/code/vibecoding/tiktok_analytics && timeout 4 uv run uvicorn app.main:app --port 9099 2>&1 || true",
+  "tool": "docker",
+  "tconf": 0.889,
+  "safe_p": 0.001,
+  "deny": null,
+  "verdict": "escalate"
+ },
+ {
+  "cmd": "npm run lint 2>&1 | tail -5 && npx tsc --noEmit 2>&1 | grep -v \"npm notice\" | head -5",
+  "tool": "node",
+  "tconf": 0.998,
+  "safe_p": 0.326,
+  "deny": "npx-exec",
+  "verdict": "deny"
+ },
+ {
+  "cmd": "find / -path \"*/node_modules/@modelcontextprotocol/sdk\" -maxdepth 6 -type d 2>/dev/null | head -5",
+  "tool": "node",
+  "tconf": 0.997,
+  "safe_p": 0.774,
+  "deny": null,
+  "verdict": "escalate"
+ },
+ {
+  "cmd": "npm view @clerk/nextjs@5.7.6 peerDependencies 2>&1",
+  "tool": "node",
+  "tconf": 1.0,
+  "safe_p": 1.0,
+  "deny": null,
+  "verdict": "fast"
+ },
+ {
+  "cmd": "await page.close();",
+  "tool": "shell",
+  "tconf": 0.996,
+  "safe_p": 0.418,
+  "deny": null,
+  "verdict": "escalate"
+ },
+ {
+  "cmd": "npx --yes create-next-app@16.3.0 . --ts --tailwind --eslint --app --src-dir --import-alias \"@/*\" --use-npm --yes 2>&1 | tail -25",
+  "tool": "shell",
+  "tconf": 0.504,
+  "safe_p": 0.001,
+  "deny": "npx-exec",
+  "verdict": "deny"
+ },
+ {
+  "cmd": "const time = ((Date.now() - start) / 1000).toFixed(1);",
+  "tool": "shell",
+  "tconf": 1.0,
+  "safe_p": 0.2,
+  "deny": null,
+  "verdict": "escalate"
+ },
+ {
+  "cmd": "grep -n 'icon' frontend/src/pages/DashboardPage.tsx",
+  "tool": "shell",
+  "tconf": 0.527,
+  "safe_p": 0.984,
+  "deny": null,
+  "verdict": "escalate"
+ },
+ {
+  "cmd": "const cache = JSON.parse(fs.readFileSync(f, 'utf8'));",
+  "tool": "shell",
+  "tconf": 0.997,
+  "safe_p": 1.0,
+  "deny": null,
+  "verdict": "fast"
+ },
+ {
+  "cmd": "npm run typecheck 2>&1 | tail -1",
+  "tool": "node",
+  "tconf": 0.655,
+  "safe_p": 0.0,
+  "deny": null,
+  "verdict": "escalate"
+ },
+ {
+  "cmd": "req = info.get('requested_formats')",
+  "tool": "shell",
+  "tconf": 1.0,
+  "safe_p": 1.0,
+  "deny": null,
+  "verdict": "fast"
+ },
+ {
+  "cmd": "undef = sorted(used - defined)",
+  "tool": "shell",
+  "tconf": 1.0,
+  "safe_p": 0.146,
+  "deny": null,
+  "verdict": "escalate"
+ },
+ {
+  "cmd": "rm -f /tmp/tiktok_x_test.mp4",
+  "tool": "shell",
+  "tconf": 0.912,
+  "safe_p": 0.378,
+  "deny": "rm",
+  "verdict": "deny"
+ },
+ {
+  "cmd": "await login(username, password);",
+  "tool": "shell",
+  "tconf": 1.0,
+  "safe_p": 0.923,
+  "deny": null,
+  "verdict": "fast"
+ },
+ {
+  "cmd": "const nextConfig: NextConfig = {",
+  "tool": "node",
+  "tconf": 0.591,
+  "safe_p": 0.987,
+  "deny": null,
+  "verdict": "escalate"
+ },
+ {
+  "cmd": "lsof -i :3002 2>&1 | head -5",
+  "tool": "shell",
+  "tconf": 1.0,
+  "safe_p": 0.837,
+  "deny": null,
+  "verdict": "escalate"
+ },
+ {
+  "cmd": "const priceEl = card.querySelector('.product-price');",
+  "tool": "shell",
+  "tconf": 0.988,
+  "safe_p": 0.998,
+  "deny": null,
+  "verdict": "fast"
+ },
+ {
+  "cmd": "grep -n 'fetchHtml\\|axios\\|export' /home/uzu/Projects/active/min/arly_backend_gces026/product_scrapper/src/utils.js | head -20",
+  "tool": "git",
+  "tconf": 0.992,
+  "safe_p": 0.999,
+  "deny": null,
+  "verdict": "fast"
+ },
+ {
+  "cmd": "break",
+  "tool": "shell",
+  "tconf": 1.0,
+  "safe_p": 0.281,
+  "deny": null,
+  "verdict": "escalate"
+ },
+ {
+  "cmd": "rest = p[len('/home/uzu/.config/'):]",
+  "tool": "shell",
+  "tconf": 1.0,
+  "safe_p": 0.996,
+  "deny": null,
+  "verdict": "fast"
+ },
+ {
+  "cmd": "cat agentflow-api/.python-version",
+  "tool": "node",
+  "tconf": 0.971,
+  "safe_p": 0.999,
+  "deny": null,
+  "verdict": "fast"
+ },
+ {
+  "cmd": "sudo docker exec coolify-db psql -U coolify -d coolify -c \"\\dt\" 2>&1 | head -40",
+  "tool": "docker",
+  "tconf": 0.996,
+  "safe_p": 0.005,
+  "deny": null,
+  "verdict": "escalate"
+ },
+ {
+  "cmd": "python3 set_key.py \"sk-or-dummykey123\" >/dev/null",
+  "tool": "shell",
+  "tconf": 0.91,
+  "safe_p": 0.824,
+  "deny": null,
+  "verdict": "escalate"
+ },
+ {
+  "cmd": "rtk git checkout -b feat/admin-dashboard --quiet && echo branched",
+  "tool": "git",
+  "tconf": 1.0,
+  "safe_p": 0.087,
+  "deny": null,
+  "verdict": "escalate"
+ },
+ {
+  "cmd": "cat /tmp/api-projects.txt 2>/dev/null | head -5",
+  "tool": "shell",
+  "tconf": 1.0,
+  "safe_p": 0.174,
+  "deny": null,
+  "verdict": "escalate"
+ },
+ {
+  "cmd": "n = 0",
+  "tool": "shell",
+  "tconf": 0.996,
+  "safe_p": 0.286,
+  "deny": null,
+  "verdict": "escalate"
+ },
+ {
+  "cmd": "op_src = load_tsv('/tmp/opencode/op_rows.tsv', 7)   # sn, name, mw, river, isd, val, promoter",
+  "tool": "shell",
+  "tconf": 0.99,
+  "safe_p": 1.0,
+  "deny": null,
+  "verdict": "fast"
+ },
+ {
+  "cmd": "ls -la ~/.config/opencode/ 2>/dev/null; echo \"---\"; ls -la .opencode 2>/dev/null; echo \"---\"; ls ~/.config/opencode/plugin 2>/dev/null",
+  "tool": "git",
+  "tconf": 0.653,
+  "safe_p": 0.694,
+  "deny": null,
+  "verdict": "escalate"
+ },
+ {
+  "cmd": "rg -n \"location.state|searchParams|sessionStorage|localStorage|targetUrl\" /home/uzu/Projects/active/min/ARLY/arly-frontend/src/pages/result.tsx | head",
+  "tool": "shell",
+  "tconf": 0.614,
+  "safe_p": 0.036,
+  "deny": null,
+  "verdict": "escalate"
+ },
+ {
+  "cmd": "const cleaned = sanitizeComparison(JSON.parse(JSON.stringify(payload)), source);",
+  "tool": "shell",
+  "tconf": 0.989,
+  "safe_p": 0.044,
+  "deny": null,
+  "verdict": "escalate"
+ },
+ {
+  "cmd": "nohup .venv/bin/uvicorn app.main:app --host 0.0.0.0 --port 8080 > /tmp/tiktok-server.log 2>&1 &",
+  "tool": "docker",
+  "tconf": 0.322,
+  "safe_p": 0.0,
+  "deny": null,
+  "verdict": "escalate"
+ },
+ {
+  "cmd": "snippet = data[start:min(start+500, end)]",
+  "tool": "shell",
+  "tconf": 0.993,
+  "safe_p": 1.0,
+  "deny": null,
+  "verdict": "fast"
+ },
+ {
+  "cmd": "cd /home/uzu/code/vibecoding/toolbox/quickshell-toolbox && git status --short && git log --oneline -3",
+  "tool": "git",
+  "tconf": 0.686,
+  "safe_p": 0.005,
+  "deny": null,
+  "verdict": "escalate"
+ },
+ {
+  "cmd": "rtk read .gitignore; echo \"---\"; rtk grep -n \"5173\\|executablePath\\|require(\" smoke.mjs | head -10",
+  "tool": "node",
+  "tconf": 0.598,
+  "safe_p": 0.893,
+  "deny": null,
+  "verdict": "escalate"
+ },
+ {
+  "cmd": "keys = list(scope.keys())[:15]",
+  "tool": "shell",
+  "tconf": 1.0,
+  "safe_p": 0.944,
+  "deny": null,
+  "verdict": "fast"
+ },
+ {
+  "cmd": "const sig = m.sourceConstraints(src);",
+  "tool": "shell",
+  "tconf": 0.575,
+  "safe_p": 0.899,
+  "deny": null,
+  "verdict": "escalate"
+ },
+ {
+  "cmd": "sed -n '258,270p' internal/api/api.go; sed -n '28,36p' internal/api/api.go",
+  "tool": "shell",
+  "tconf": 0.995,
+  "safe_p": 0.008,
+  "deny": null,
+  "verdict": "escalate"
+ },
+ {
+  "cmd": "hits = find(n)",
+  "tool": "shell",
+  "tconf": 1.0,
+  "safe_p": 1.0,
+  "deny": null,
+  "verdict": "fast"
+ },
+ {
+  "cmd": "resp = urllib.request.urlopen(req, timeout=10)",
+  "tool": "shell",
+  "tconf": 0.635,
+  "safe_p": 0.075,
+  "deny": null,
+  "verdict": "escalate"
+ },
+ {
+  "cmd": "git checkout --theirs arly-frontend/src/components/ProductCard.tsx && git checkout --theirs arly-frontend/src/pages/footer.tsx",
+  "tool": "git",
+  "tconf": 1.0,
+  "safe_p": 0.616,
+  "deny": null,
+  "verdict": "escalate"
+ },
+ {
+  "cmd": "tabUrlCache = url;",
+  "tool": "shell",
+  "tconf": 0.998,
+  "safe_p": 0.978,
+  "deny": null,
+  "verdict": "fast"
+ },
+ {
+  "cmd": "author = info['author']",
+  "tool": "shell",
+  "tconf": 0.999,
+  "safe_p": 0.951,
+  "deny": null,
+  "verdict": "fast"
+ },
+ {
+  "cmd": "const cands = {};",
+  "tool": "shell",
+  "tconf": 0.994,
+  "safe_p": 0.088,
+  "deny": null,
+  "verdict": "escalate"
+ },
+ {
+  "cmd": "chmod +x /home/uzu/scripts/pinterest_download",
+  "tool": "shell",
+  "tconf": 0.986,
+  "safe_p": 0.054,
+  "deny": null,
+  "verdict": "escalate"
+ },
+ {
+  "cmd": "cd /home/uzu/code/vibecoding/ai-vault && cat .playwright-mcp/console-*.log",
+  "tool": "shell",
+  "tconf": 0.995,
+  "safe_p": 0.042,
+  "deny": null,
+  "verdict": "escalate"
+ },
+ {
+  "cmd": "cd /home/uzu/Projects/active/min/ARLY && git push origin main 2>&1 | tail -3",
+  "tool": "git",
+  "tconf": 0.992,
+  "safe_p": 0.002,
+  "deny": "git-push",
+  "verdict": "deny"
+ },
+ {
+  "cmd": "find /home/uzu/Projects/active -maxdepth 3 -type d -name \"*query*\" 2>/dev/null | head -20",
+  "tool": "shell",
+  "tconf": 1.0,
+  "safe_p": 0.15,
+  "deny": null,
+  "verdict": "escalate"
+ },
+ {
+  "cmd": "let cleaned = name;",
+  "tool": "shell",
+  "tconf": 1.0,
+  "safe_p": 0.994,
+  "deny": null,
+  "verdict": "fast"
+ },
+ {
+  "cmd": "Uses search_notes + get_notes_by_ids (the /notes filter endpoint is",
+  "tool": "node",
+  "tconf": 0.973,
+  "safe_p": 0.901,
+  "deny": null,
+  "verdict": "fast"
+ },
+ {
+  "cmd": "sed -n '50,145p' /usr/lib/qt6/qml/Quickshell/Io/quickshell-io.qmltypes",
+  "tool": "shell",
+  "tconf": 0.994,
+  "safe_p": 0.176,
+  "deny": null,
+  "verdict": "escalate"
+ },
+ {
+  "cmd": "const c = JSON.parse(fs.readFileSync('data/query_cache.json','utf8'));",
+  "tool": "shell",
+  "tconf": 0.99,
+  "safe_p": 0.224,
+  "deny": null,
+  "verdict": "escalate"
+ },
+ {
+  "cmd": "npm run lint 2>&1 | tail -10 && npm run build 2>&1 | tail -40",
+  "tool": "node",
+  "tconf": 0.422,
+  "safe_p": 0.28,
+  "deny": null,
+  "verdict": "escalate"
+ },
+ {
+  "cmd": "python3 --version && pip --version && (nvidia-smi -L 2>/dev/null || echo \"NO_GPU\") && free -g | head -2 && df -h . | tail -1",
+  "tool": "shell",
+  "tconf": 0.879,
+  "safe_p": 0.001,
+  "deny": null,
+  "verdict": "escalate"
+ },
+ {
+  "cmd": "npx tsc --noEmit 2>&1 && npx vite build 2>&1 | tail -5",
+  "tool": "shell",
+  "tconf": 0.984,
+  "safe_p": 0.215,
+  "deny": "npx-exec",
+  "verdict": "deny"
+ },
+ {
+  "cmd": "u = User.objects.get(email='admin@test.com')",
+  "tool": "shell",
+  "tconf": 0.97,
+  "safe_p": 1.0,
+  "deny": null,
+  "verdict": "fast"
+ },
+ {
+  "cmd": "const [username, setUsername] = useState(\"\");",
+  "tool": "shell",
+  "tconf": 1.0,
+  "safe_p": 0.945,
+  "deny": null,
+  "verdict": "fast"
+ },
+ {
+  "cmd": "const lines = buf.split(\"\\n\");",
+  "tool": "shell",
+  "tconf": 1.0,
+  "safe_p": 0.992,
+  "deny": null,
+  "verdict": "fast"
+ },
+ {
+  "cmd": "tmux capture-pane -p -t tiktok-api -S -50",
+  "tool": "shell",
+  "tconf": 0.579,
+  "safe_p": 0.0,
+  "deny": null,
+  "verdict": "escalate"
+ },
+ {
+  "cmd": "cd /home/uzu/Projects/active/agentflow/agentflow-api && python -m pytest tests/ -v -x 2>&1 | tail -30",
+  "tool": "shell",
+  "tconf": 0.463,
+  "safe_p": 0.091,
+  "deny": null,
+  "verdict": "escalate"
+ },
+ {
+  "cmd": "curl -s -X POST -H \"Content-Type: application/json\" \\",
+  "tool": "docker",
+  "tconf": 0.999,
+  "safe_p": 0.694,
+  "deny": null,
+  "verdict": "escalate"
+ },
+ {
+  "cmd": "NOTIFY pgrst, 'reload schema';",
+  "tool": "shell",
+  "tconf": 0.991,
+  "safe_p": 0.995,
+  "deny": null,
+  "verdict": "fast"
+ },
+ {
+  "cmd": "npm install 2>&1 | tail -n 30",
+  "tool": "node",
+  "tconf": 0.816,
+  "safe_p": 0.009,
+  "deny": "npm-install",
+  "verdict": "deny"
+ },
+ {
+  "cmd": "const img = first.querySelector('img');",
+  "tool": "shell",
+  "tconf": 0.993,
+  "safe_p": 1.0,
+  "deny": null,
+  "verdict": "fast"
+ },
+ {
+  "cmd": "python -m pytest tests/ -v 2>&1",
+  "tool": "node",
+  "tconf": 1.0,
+  "safe_p": 0.951,
+  "deny": null,
+  "verdict": "fast"
+ },
+ {
+  "cmd": "file /tmp/tiktok_x_test.mp4",
+  "tool": "shell",
+  "tconf": 0.652,
+  "safe_p": 0.837,
+  "deny": null,
+  "verdict": "escalate"
+ },
+ {
+  "cmd": "unsafe rows (new pkgs/paths/flags per dangerous verb)",
+  "tool": "shell",
+  "tconf": 1.0,
+  "safe_p": 0.34,
+  "deny": null,
+  "verdict": "escalate"
+ },
+ {
+  "cmd": "tmux send-keys -t dj2 'cd /home/uzu/code/vibecoding/study-tracker' Enter",
+  "tool": "shell",
+  "tconf": 0.999,
+  "safe_p": 0.038,
+  "deny": null,
+  "verdict": "escalate"
+ },
+ {
+  "cmd": "cd /home/uzu/Projects/active/min/arly_backend_gces026 && git push origin master 2>&1 | tail -3",
+  "tool": "git",
+  "tconf": 0.993,
+  "safe_p": 0.0,
+  "deny": "git-push",
+  "verdict": "deny"
+ },
+ {
+  "cmd": "DATE = re.compile(r'^\\d{1,2}/\\d{1,2}/\\d{4}$')",
+  "tool": "node",
+  "tconf": 0.919,
+  "safe_p": 0.21,
+  "deny": null,
+  "verdict": "escalate"
+ },
+ {
+  "cmd": "cd /home/uzu/code/vibecoding/fanify/backend && uv run uvicorn main:app --reload --port 8000 &",
+  "tool": "docker",
+  "tconf": 0.987,
+  "safe_p": 0.72,
+  "deny": null,
+  "verdict": "escalate"
+ },
+ {
+  "cmd": "opts = {'quiet': True, 'no_warnings': True, 'format': 'download', 'outtmpl': tmp}",
+  "tool": "shell",
+  "tconf": 0.997,
+  "safe_p": 0.011,
+  "deny": null,
+  "verdict": "escalate"
+ },
+ {
+  "cmd": "sudo docker exec coolify-db psql -U coolify -d coolify -t -c \"SELECT fqdn FROM instance_settings WHERE id=0;\" 2>&1",
+  "tool": "docker",
+  "tconf": 0.996,
+  "safe_p": 0.854,
+  "deny": null,
+  "verdict": "escalate"
+ },
+ {
+  "cmd": "file_offset = p_offset + (0x9500 - p_vaddr)",
+  "tool": "shell",
+  "tconf": 1.0,
+  "safe_p": 0.008,
+  "deny": null,
+  "verdict": "escalate"
+ },
+ {
+  "cmd": "root = f.root",
+  "tool": "shell",
+  "tconf": 1.0,
+  "safe_p": 0.006,
+  "deny": null,
+  "verdict": "escalate"
+ },
+ {
+  "cmd": "const r = await scrapeBrotherMart('Redmi 15C 6GB+128GB 6.9 Dot Drop');",
+  "tool": "docker",
+  "tconf": 0.958,
+  "safe_p": 0.733,
+  "deny": null,
+  "verdict": "escalate"
+ },
+ {
+  "cmd": "source .venv/bin/activate && python manage.py makemigrations tracking 2>&1 -v 3",
+  "tool": "docker",
+  "tconf": 0.568,
+  "safe_p": 0.001,
+  "deny": null,
+  "verdict": "escalate"
+ },
+ {
+  "cmd": "grep -R \"assets/college\" frontend --include=\"*.ts\" --include=\"*.tsx\" -n | head -n 30",
+  "tool": "git",
+  "tconf": 0.988,
+  "safe_p": 0.998,
+  "deny": null,
+  "verdict": "fast"
+ },
+ {
+  "cmd": "pkill -f \"uvicorn\" 2>/dev/null",
+  "tool": "shell",
+  "tconf": 0.855,
+  "safe_p": 0.158,
+  "deny": "kill",
+  "verdict": "deny"
+ },
+ {
+  "cmd": "npx tsx scripts/omnlib-cli.ts find \"The Spark in Your Eyes\" --type manga 2>&1 | head -10",
+  "tool": "shell",
+  "tconf": 0.847,
+  "safe_p": 0.031,
+  "deny": "npx-exec",
+  "verdict": "deny"
+ },
+ {
+  "cmd": "try { require('express'); console.log('express: ok'); } catch(e) { console.log('express:', e.message); }",
+  "tool": "node",
+  "tconf": 0.998,
+  "safe_p": 0.414,
+  "deny": null,
+  "verdict": "escalate"
+ },
+ {
+  "cmd": "const html1 = '<html><body><h1>Test Product</h1><span itemprop=\\\"price\\\">25000</span></body></html>';",
+  "tool": "node",
+  "tconf": 0.903,
+  "safe_p": 0.707,
+  "deny": null,
+  "verdict": "escalate"
+ },
+ {
+  "cmd": "nohup uv run uvicorn main:app --port 8000 --reload > /tmp/fanify-api.log 2>&1 &",
+  "tool": "docker",
+  "tconf": 0.887,
+  "safe_p": 0.992,
+  "deny": null,
+  "verdict": "escalate"
+ },
+ {
+  "cmd": "title = (await link.inner_text()).strip()",
+  "tool": "shell",
+  "tconf": 0.977,
+  "safe_p": 0.996,
+  "deny": null,
+  "verdict": "fast"
+ },
+ {
+  "cmd": "python3 -m py_compile \"working_with_LLM.py\" && echo OK",
+  "tool": "node",
+  "tconf": 0.997,
+  "safe_p": 0.152,
+  "deny": null,
+  "verdict": "escalate"
+ },
+ {
+  "cmd": "npx tsx scripts/tmp-kitsu-check.ts; rm scripts/tmp-kitsu-check.ts",
+  "tool": "shell",
+  "tconf": 0.621,
+  "safe_p": 0.707,
+  "deny": "rm",
+  "verdict": "deny"
+ },
+ {
+  "cmd": "cd /home/uzu/code/vibecoding/ytdlp-extension && bash install.sh",
+  "tool": "shell",
+  "tconf": 0.679,
+  "safe_p": 0.053,
+  "deny": null,
+  "verdict": "escalate"
+ },
+ {
+  "cmd": "await page.wait_for_timeout(5000)",
+  "tool": "docker",
+  "tconf": 0.813,
+  "safe_p": 0.117,
+  "deny": null,
+  "verdict": "escalate"
+ },
+ {
+  "cmd": "c = chunk_type + data",
+  "tool": "shell",
+  "tconf": 1.0,
+  "safe_p": 1.0,
+  "deny": null,
+  "verdict": "fast"
+ },
+ {
+  "cmd": "const bodyHtml = \\$('body').html() || '';",
+  "tool": "shell",
+  "tconf": 0.816,
+  "safe_p": 0.068,
+  "deny": null,
+  "verdict": "escalate"
+ },
+ {
+  "cmd": "npm run build 2>&1 | tail -40",
+  "tool": "node",
+  "tconf": 0.63,
+  "safe_p": 0.027,
+  "deny": null,
+  "verdict": "escalate"
+ },
+ {
+  "cmd": "rg -n \"fetch\\(|api/|Authorization|access_token|getSession|supabase\" src/pages/result.tsx | head -30",
+  "tool": "git",
+  "tconf": 0.634,
+  "safe_p": 0.988,
+  "deny": null,
+  "verdict": "escalate"
+ },
+ {
+  "cmd": "const referenceTokens = tokenize('Apple iPhone 16');",
+  "tool": "shell",
+  "tconf": 0.583,
+  "safe_p": 0.999,
+  "deny": null,
+  "verdict": "escalate"
+ },
+ {
+  "cmd": "npx vitest run 2>&1 | grep -A 12 \"FAIL\\|Error\" | head -30",
+  "tool": "shell",
+  "tconf": 0.56,
+  "safe_p": 0.037,
+  "deny": "npx-exec",
+  "verdict": "deny"
+ },
+ {
+  "cmd": "function walk(dir) {",
+  "tool": "shell",
+  "tconf": 1.0,
+  "safe_p": 0.865,
+  "deny": null,
+  "verdict": "escalate"
+ },
+ {
+  "cmd": "md = pymupdf4llm.to_markdown('data/papers/1706.03762.pdf', show_progress=False)",
+  "tool": "node",
+  "tconf": 0.697,
+  "safe_p": 0.941,
+  "deny": null,
+  "verdict": "escalate"
+ },
+ {
+  "cmd": "opts = {'quiet': True, 'no_warnings': True, 'extract_flat': True, 'playlistend': 5}",
+  "tool": "shell",
+  "tconf": 0.999,
+  "safe_p": 0.017,
+  "deny": null,
+  "verdict": "escalate"
+ },
+ {
+  "cmd": "npm install @supabase/supabase-js",
+  "tool": "node",
+  "tconf": 1.0,
+  "safe_p": 0.347,
+  "deny": "npm-install",
+  "verdict": "deny"
+ },
+ {
+  "cmd": "Match the backend change that replaced the LLM compare/verdict path with a",
+  "tool": "node",
+  "tconf": 0.998,
+  "safe_p": 0.999,
+  "deny": null,
+  "verdict": "fast"
+ },
+ {
+  "cmd": "expected = ydl.prepare_filename(info)",
+  "tool": "shell",
+  "tconf": 1.0,
+  "safe_p": 0.998,
+  "deny": null,
+  "verdict": "fast"
+ },
+ {
+  "cmd": "var t := (c as Node3D).transform",
+  "tool": "node",
+  "tconf": 0.5,
+  "safe_p": 1.0,
+  "deny": null,
+  "verdict": "escalate"
+ },
+ {
+  "cmd": "npm run build 2>&1 | tail -6",
+  "tool": "node",
+  "tconf": 0.75,
+  "safe_p": 0.0,
+  "deny": null,
+  "verdict": "escalate"
+ },
+ {
+  "cmd": "t = t.replace(\"font-size:12px;color:var(--dim);margin-top:4px\", \"font-size:14px;color:var(--dim);margin-top:6px\")",
+  "tool": "shell",
+  "tconf": 0.977,
+  "safe_p": 0.029,
+  "deny": null,
+  "verdict": "escalate"
+ },
+ {
+  "cmd": "ef = store.embedding_function",
+  "tool": "shell",
+  "tconf": 0.966,
+  "safe_p": 0.01,
+  "deny": null,
+  "verdict": "escalate"
+ },
+ {
+  "cmd": "node --check llm/index.js 2>&1 || node -c llm/index.js 2>&1",
+  "tool": "node",
+  "tconf": 1.0,
+  "safe_p": 0.997,
+  "deny": null,
+  "verdict": "fast"
+ },
+ {
+  "cmd": "var c: Vector3 = main.cam.position - main.player.position",
+  "tool": "shell",
+  "tconf": 1.0,
+  "safe_p": 0.399,
+  "deny": null,
+  "verdict": "escalate"
+ },
+ {
+  "cmd": "python3 rnn.py",
+  "tool": "node",
+  "tconf": 0.874,
+  "safe_p": 0.963,
+  "deny": null,
+  "verdict": "escalate"
+ }
+]

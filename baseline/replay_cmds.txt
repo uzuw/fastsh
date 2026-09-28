@@ -1,0 +1,200 @@
+node scripts/seed.ts
+rg -n "export const|export type" src/gen/guitar/v1/guitar_connect.ts | head -20
+git status --short | head -30; echo ---; rtk git log --oneline -5; echo ---; git remote -v; echo ---; rtk git branch --show-current
+python3 -m venv venv && venv/bin/pip install -q -r requirements.txt
+pgrep -af ydotoold || echo "ydotoold not running"; which ydotool; ydotool --help 2>&1 | head -5
+cat .env
+mkdir -p /home/uzu/Projects/active/agentflow/.github/workflows
+ls ~/.dsh/profiles/web/node_modules/@liustack/ 2>&1 | head
+client = AsyncIOMotorClient(uri, serverSelectionTimeoutMS=8000)
+ref = (m.group(1) or m.group(2)).strip()
+npx tsc --noEmit 2>&1 | tail -5 && echo TSC-OK && npm run lint 2>&1 | tail -3 && echo LINT-OK
+api_data = products_data[0]
+mkdir -p server/data && cd server && npm init -y >/dev/null && npm install express 2>&1 | tail -3
+npm run 2>&1 | head -20; npx vite build --help 2>&1 | head -5; node -e "import('./src/pages/Portfolio.jsx')" 2>&1 | head -20
+ls -la /home/uzu/code/vibecoding/frontend_framework
+data = raw
+csv_names = [r['name'] for r in rows]
+mv /tmp/tui.go tui.go
+export default function LoginPage() {
+const allDivs = document.querySelectorAll('div');
+cd /home/uzu/Projects/active/agentflow/agentflow-api && uv pip install pytest-asyncio 2>&1 | tail -10
+p_flags = struct.unpack('<I', ph[4:8])[0]
+const src = require('fs').readFileSync('node_modules/@connectrpc/connect/dist/cjs/index.d.ts','utf8');
+find /home/uzu/Projects/active/min/arly_backend_gces026 -type f -not -path '*/node_modules/*' -not -path '*/.git/*' -not -path '*/.next/*' | head -80
+rtk grep -o -E ".field-input input, .field-input select\{[^}]*\}" /tmp/opencode/layout.css
+ydl = yt_dlp.YoutubeDL({'quiet': True, 'no_warnings': True})
+const elapsed = ((Date.now() - start) / 1000).toFixed(1);
+lsof -i :3001 -P -n 2>/dev/null | head -5
+ls -la /home/uzu/code/vibecoding/fanify/backend/ | grep -v .venv | grep -v __pycache__
+const page = await browser.newPage();
+wait $SERVER_PID 2>/dev/null
+uv run python -m ruff check src/agentflow_api/auth/ 2>&1
+try { await mermaid.parse(src); console.log('useCase: PARSES OK'); }
+python3 agent.py 2>&1 | tail -3
+offset2 = file_offset + (0x9510 - 0x9000)
+continue
+find src -type f | sort
+data = f['Data']
+cd /home/uzu/classrrom/azure/azure-ci-cd-pipeline && timeout 5 python3 server.py &
+node product_scrapper/test.js "iphone" 2>&1
+find ~/.dsh/profiles -maxdepth 4 -name "*.json" | xargs rtk grep -l "modlens" 2>/dev/null | head -5
+ls -lh dotfiles/screenshots/ 2>&1; git -C dotfiles status --short 2>&1; git -C dotfiles diff 2>&1 | head -100
+rtk find ~/.cache/huggingface/hub -type f -size +500M 2>/dev/null; echo ---; rtk ls ~/.cache/huggingface/hub/ | head -20
+rustup target list --installed 2>&1; echo "---"; which wasm-bindgen wasm-pack 2>&1; echo "---"; ls ~/.cargo/bin 2>/dev/null
+const s = document.querySelector('script[type=\"application/json\"]');
+grep -n "PIXEL\|photo\|bluebook" scripts/seed.py | head
+Edit name
+node product_scrapper/inspect_html.mjs
+theme = tp.get('properties',{}) if isinstance(tp,dict) else {}
+echo copied
+mkdir -p ~/reports
+ls -la /home/uzu/.vimrc /home/uzu/.vim /home/uzu/.tmux.conf /home/uzu/.zshrc /home/uzu/.inputrc /home/uzu/.Xresources 2>/dev/null
+function showProgress() {
+const keys = Object.keys(cache).filter(k => /nothing phone 4b|redmi 15/i.test(k));
+await check('Hukut', scrapeHukut, 'laptop');
+raw += bytes([r, g, b, 255])
+lastProgress = clamped;
+cat /home/uzu/Projects/active/min/arly_backend_gces026/.env
+const r = await scrapeDaraz('Samsung Galaxy S23 FE');
+cargo --version; rustc --version 2>&1; ls "$(rustc --print sysroot 2>/dev/null)/lib/rustlib" 2>/dev/null; echo "---"; go version
+find /home/uzu/Projects/active/min/arly_backend_gces026/product_scrapper -name "olizstore*" -type f
+ls -la /home/uzu/Projects/agentdeck/app/sessions/\[id\]/cli/
+npm run build 2>&1 | tail -20; echo "---"; npm test 2>&1 | tail -30; echo "---"; npx tsc --noEmit 2>&1 | head -20
+const k = m.getAttribute('property') || m.getAttribute('name');
+const r = await kitsu.byId("56748");
+find . -name "home-top.png" -not -path "*/node_modules/*" 2>/dev/null; find / -name "home-top.png" -not -path "*/proc/*" 2>/dev/null | head -5
+mobile_headers = {'User-Agent': 'Mozilla/5.0 (iPhone; CPU iPhone OS 17_0 like Mac OS X) AppleWebKit/605.1.15'}
+ls -la /home/uzu/Projects/agentdeck/app/projects/ 2>/dev/null
+npm install --no-audit --no-fund 2>&1 | tail -3
+cat /home/uzu/Projects/active/min/arly_backend_gces026/package.json | head -30
+const bodyText = \$('body').text();
+npm install 2>&1 | tail -6
+python3 -m py_compile working_with_LLM.py && echo OK
+msg2 = json.dumps({"command": "cancel"}).encode("utf-8")
+ls /home/uzu/code/rag/arly/.venv/bin/ | sort
+npx vitest run 2>&1 | tail -12
+curl -sL --connect-timeout 10 -H "Accept: application/json" \
+i = html.find('Rs.<!-- -->')
+git -C /home/uzu/code/vibecoding/course_tracker status 2>&1 | head -5; echo "---GH---"; gh auth status 2>&1 | head -8
+ls -la /home/uzu/code/intern/month1
+cd /home/uzu/code/vibecoding/ai-vault && npm install marked 2>&1 | tail -2 && rg '"marked"' package.json
+rtk git rm --cached frontend/tsconfig.tsbuildinfo --quiet 2>&1; rtk rm -f frontend/tsconfig.tsbuildinfo; rtk git status --short | head -20
+ts = int(time.time() * 1000)
+Login
+rtk git status --short && echo "---" && rtk git diff --stat
+sleep 2; cat /tmp/backend.log
+git log --oneline
+try { await mermaid.parse(blocks[i]); console.log('OK  diagram', i + 1); }
+rtk ls /home/uzu/Projects/active/pj/sawari/frontend/.next 2>&1; ps aux | grep "[n]ext" | head -5; echo done
+raw = open('/home/uzu/Downloads/world/level.dat','rb').read()
+cat package.json; echo "---"; ls src/app; echo "---"; cat src/app/globals.css | head -30
+prefixes = [str(Path(p)) for p in watcher.DEFAULT_WATCH_PATHS]
+pages = list(d['query']['pages'].values())
+const items = [
+cd /home/uzu/code/vibecoding/tiktok_analytics && timeout 4 uv run uvicorn app.main:app --port 9099 2>&1 || true
+npm run lint 2>&1 | tail -5 && npx tsc --noEmit 2>&1 | grep -v "npm notice" | head -5
+find / -path "*/node_modules/@modelcontextprotocol/sdk" -maxdepth 6 -type d 2>/dev/null | head -5
+npm view @clerk/nextjs@5.7.6 peerDependencies 2>&1
+await page.close();
+npx --yes create-next-app@16.3.0 . --ts --tailwind --eslint --app --src-dir --import-alias "@/*" --use-npm --yes 2>&1 | tail -25
+const time = ((Date.now() - start) / 1000).toFixed(1);
+grep -n 'icon' frontend/src/pages/DashboardPage.tsx
+const cache = JSON.parse(fs.readFileSync(f, 'utf8'));
+npm run typecheck 2>&1 | tail -1
+req = info.get('requested_formats')
+undef = sorted(used - defined)
+rm -f /tmp/tiktok_x_test.mp4
+await login(username, password);
+const nextConfig: NextConfig = {
+lsof -i :3002 2>&1 | head -5
+const priceEl = card.querySelector('.product-price');
+grep -n 'fetchHtml\|axios\|export' /home/uzu/Projects/active/min/arly_backend_gces026/product_scrapper/src/utils.js | head -20
+break
+rest = p[len('/home/uzu/.config/'):]
+cat agentflow-api/.python-version
+sudo docker exec coolify-db psql -U coolify -d coolify -c "\dt" 2>&1 | head -40
+python3 set_key.py "sk-or-dummykey123" >/dev/null
+rtk git checkout -b feat/admin-dashboard --quiet && echo branched
+cat /tmp/api-projects.txt 2>/dev/null | head -5
+n = 0
+op_src = load_tsv('/tmp/opencode/op_rows.tsv', 7)   # sn, name, mw, river, isd, val, promoter
+ls -la ~/.config/opencode/ 2>/dev/null; echo "---"; ls -la .opencode 2>/dev/null; echo "---"; ls ~/.config/opencode/plugin 2>/dev/null
+rg -n "location.state|searchParams|sessionStorage|localStorage|targetUrl" /home/uzu/Projects/active/min/ARLY/arly-frontend/src/pages/result.tsx | head
+const cleaned = sanitizeComparison(JSON.parse(JSON.stringify(payload)), source);
+nohup .venv/bin/uvicorn app.main:app --host 0.0.0.0 --port 8080 > /tmp/tiktok-server.log 2>&1 &
+snippet = data[start:min(start+500, end)]
+cd /home/uzu/code/vibecoding/toolbox/quickshell-toolbox && git status --short && git log --oneline -3
+rtk read .gitignore; echo "---"; rtk grep -n "5173\|executablePath\|require(" smoke.mjs | head -10
+keys = list(scope.keys())[:15]
+const sig = m.sourceConstraints(src);
+sed -n '258,270p' internal/api/api.go; sed -n '28,36p' internal/api/api.go
+hits = find(n)
+resp = urllib.request.urlopen(req, timeout=10)
+git checkout --theirs arly-frontend/src/components/ProductCard.tsx && git checkout --theirs arly-frontend/src/pages/footer.tsx
+tabUrlCache = url;
+author = info['author']
+const cands = {};
+chmod +x /home/uzu/scripts/pinterest_download
+cd /home/uzu/code/vibecoding/ai-vault && cat .playwright-mcp/console-*.log
+cd /home/uzu/Projects/active/min/ARLY && git push origin main 2>&1 | tail -3
+find /home/uzu/Projects/active -maxdepth 3 -type d -name "*query*" 2>/dev/null | head -20
+let cleaned = name;
+Uses search_notes + get_notes_by_ids (the /notes filter endpoint is
+sed -n '50,145p' /usr/lib/qt6/qml/Quickshell/Io/quickshell-io.qmltypes
+const c = JSON.parse(fs.readFileSync('data/query_cache.json','utf8'));
+npm run lint 2>&1 | tail -10 && npm run build 2>&1 | tail -40
+python3 --version && pip --version && (nvidia-smi -L 2>/dev/null || echo "NO_GPU") && free -g | head -2 && df -h . | tail -1
+npx tsc --noEmit 2>&1 && npx vite build 2>&1 | tail -5
+u = User.objects.get(email='admin@test.com')
+const [username, setUsername] = useState("");
+const lines = buf.split("\n");
+tmux capture-pane -p -t tiktok-api -S -50
+cd /home/uzu/Projects/active/agentflow/agentflow-api && python -m pytest tests/ -v -x 2>&1 | tail -30
+curl -s -X POST -H "Content-Type: application/json" \
+NOTIFY pgrst, 'reload schema';
+npm install 2>&1 | tail -n 30
+const img = first.querySelector('img');
+python -m pytest tests/ -v 2>&1
+file /tmp/tiktok_x_test.mp4
+unsafe rows (new pkgs/paths/flags per dangerous verb)
+tmux send-keys -t dj2 'cd /home/uzu/code/vibecoding/study-tracker' Enter
+cd /home/uzu/Projects/active/min/arly_backend_gces026 && git push origin master 2>&1 | tail -3
+DATE = re.compile(r'^\d{1,2}/\d{1,2}/\d{4}$')
+cd /home/uzu/code/vibecoding/fanify/backend && uv run uvicorn main:app --reload --port 8000 &
+opts = {'quiet': True, 'no_warnings': True, 'format': 'download', 'outtmpl': tmp}
+sudo docker exec coolify-db psql -U coolify -d coolify -t -c "SELECT fqdn FROM instance_settings WHERE id=0;" 2>&1
+file_offset = p_offset + (0x9500 - p_vaddr)
+root = f.root
+const r = await scrapeBrotherMart('Redmi 15C 6GB+128GB 6.9 Dot Drop');
+source .venv/bin/activate && python manage.py makemigrations tracking 2>&1 -v 3
+grep -R "assets/college" frontend --include="*.ts" --include="*.tsx" -n | head -n 30
+pkill -f "uvicorn" 2>/dev/null
+npx tsx scripts/omnlib-cli.ts find "The Spark in Your Eyes" --type manga 2>&1 | head -10
+try { require('express'); console.log('express: ok'); } catch(e) { console.log('express:', e.message); }
+const html1 = '<html><body><h1>Test Product</h1><span itemprop=\"price\">25000</span></body></html>';
+nohup uv run uvicorn main:app --port 8000 --reload > /tmp/fanify-api.log 2>&1 &
+title = (await link.inner_text()).strip()
+python3 -m py_compile "working_with_LLM.py" && echo OK
+npx tsx scripts/tmp-kitsu-check.ts; rm scripts/tmp-kitsu-check.ts
+cd /home/uzu/code/vibecoding/ytdlp-extension && bash install.sh
+await page.wait_for_timeout(5000)
+c = chunk_type + data
+const bodyHtml = \$('body').html() || '';
+npm run build 2>&1 | tail -40
+rg -n "fetch\(|api/|Authorization|access_token|getSession|supabase" src/pages/result.tsx | head -30
+const referenceTokens = tokenize('Apple iPhone 16');
+npx vitest run 2>&1 | grep -A 12 "FAIL\|Error" | head -30
+function walk(dir) {
+md = pymupdf4llm.to_markdown('data/papers/1706.03762.pdf', show_progress=False)
+opts = {'quiet': True, 'no_warnings': True, 'extract_flat': True, 'playlistend': 5}
+npm install @supabase/supabase-js
+Match the backend change that replaced the LLM compare/verdict path with a
+expected = ydl.prepare_filename(info)
+var t := (c as Node3D).transform
+npm run build 2>&1 | tail -6
+t = t.replace("font-size:12px;color:var(--dim);margin-top:4px", "font-size:14px;color:var(--dim);margin-top:6px")
+ef = store.embedding_function
+node --check llm/index.js 2>&1 || node -c llm/index.js 2>&1
+var c: Vector3 = main.cam.position - main.player.position
+python3 rnn.py

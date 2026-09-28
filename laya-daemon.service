@@ -1,0 +1,12 @@
+[Unit]
+Description=Laya gate daemon (fastsh)
+After=network.target
+
+[Service]
+Type=simple
+ExecStart=/home/uzu/code/infra/laya/.venv/bin/python /home/uzu/code/vibecoding/terminal_agent/laya_daemon.py
+Restart=on-failure
+RestartSec=5
+
+[Install]
+WantedBy=default.target

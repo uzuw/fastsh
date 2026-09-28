@@ -1,0 +1,9 @@
+__pycache__/
+*.pyc
+*.log
+*.out
+baseline/logs/
+baseline/logs_fast/
+baseline/logs_mcp_*/
+baseline/harness_cmds_raw.txt
+.opencode/
